@@ -5,13 +5,16 @@
 # See documentation in:
 # http://doc.scrapy.org/en/latest/topics/items.html
 
-import scrapy
+from scrapy.item import Item,Field
 
 
-class MainProjectItem(scrapy.Item):
+class MainProjectItem(Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-	title=scrapy.Field()
-	link=scrapy.Field()
-	desc=scrapy.Field()
-    pass
+	name=Field()
+	catalog=Field()
+	workLocation=Field()
+	recruitNumber=Filed()
+	detailLink=Filed()
+	publishTime=Field()
+	
